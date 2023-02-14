@@ -1,0 +1,465 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+.nav-container{
+    height: 72px;
+}
+
+.wrapper{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+    
+}
+
+ 
+
+
+nav ul{
+    display: flex;
+    list-style: none;
+  
+}
+
+nav .logo{
+    position: absolute;
+    width: 190px;
+    height: 204px;
+    left: 4px;
+    top: -21px;
+    border-radius: 106.5px;
+}
+
+
+nav ul li a{
+   display: block;
+  padding: 19px;
+  text-decoration: none;
+  color: #aaa;
+  
+  
+  margin: 10 10px;
+  
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #ED893E;
+}
+
+.nav-items li{
+    list-style: none;
+    margin-right: 50px;
+}
+
+.nav-items li a{
+    color: #9E6018;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.header-container{
+    position: relative;
+width: 1152px;
+height: 700px;
+
+background: #FFFFFF;
+border-radius: 20px;
+display: flex;
+align-items: center;
+background-position: right;
+background-size: contain;
+
+background-repeat: no-repeat;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+header h1{
+    font-family: poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 43px;
+position: absolute;
+width: 225px;
+height: 39px;
+left: 110px;
+top: 90px;
+margin-bottom: 24px;
+color: #FF8B7B;
+
+}
+
+header h2{
+    font-family: poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 36px;
+
+position: absolute;
+width: 452px;
+height: 178px;
+left: 109px;
+top: 150px;
+color: #4169E1
+}
+
+header p{
+    font-family: poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+position: absolute;
+width: 325px;
+height: 17px;
+left: 109px;
+top: 230px;
+margin-bottom: 48px;
+color: #C0BCBC;
+}
+
+/*header a{
+    font-family: Rubik;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+
+
+position: absolute;
+width: 48px;
+height: 26px;
+left: 240px;
+top: 470px;
+text-decoration: none;
+background: linear-gradient(245.73deg, #4169E1 16.12%, #FAB27B 95.07%);
+border-radius: 30px;
+padding: 24px 60px;
+display: inline-flex;
+transition: 300px;
+align-items: center;
+margin-right: 90px;
+
+}
+
+header a span{
+    display: inline-flex;
+    padding-top: -40px;
+    padding-right: 80px;
+    text-align: center;
+}*/
+
+ .hero-image{
+    position: absolute;
+    margin: 150px;
+    left: 500px;
+    bottom: 50px;
+}
+
+
+.popup {
+    display: inline-flex;
+    align-content: left;
+    justify-content: left;
+    
+    border-radius: 6px;
+    padding: 3rem 2rem;
+    position: absolute;
+    top: 280px;
+    left: 109px;
+    text-align: center;
+  }
+  .popup .popup-content  {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .popup .popup-title {
+    color: #32325d;
+    font-size: 1.8em;
+    line-height: 1.5em;
+    font-weight: 900;
+    margin-top: 0;
+  }
+  .popup .popup-body {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: #6b7c93;
+    font-weight: 500;
+    margin-bottom: 2.1em;
+  }
+  .popup .popup-button {
+    display: flex;
+    text-align: left;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 60px;
+    margin: 10px;
+    padding: 1em 3em;
+    background-size: 300% 300%;
+    color: white;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  
+    background-image: linear-gradient(to right, #4169E1 16.12%, #FAB27B 95.07%);
+    transition: 0.5s;
+  }
+  
+  .popup .popup-button:hover {
+    background-position: right center;
+  }
+  
+
+
+
+
+
+
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+      Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  
+  .main-container {
+    padding: 30px;
+  }
+  
+  /* HEADING */
+  
+  .heading {
+    text-align: center;
+    color: #132f85;
+  }
+  
+  .heading__title {
+    font-weight: 400;
+    font-family: poppins;
+    font-size: 25px;
+  }
+  
+  .heading__credits {
+    margin: 10px 0px;
+    color: #FAB27B;
+    font-size: 15px;
+    transition: all 0.5s;
+    font-family: poppins;
+  }
+  
+  .heading__link {
+    text-decoration: none;
+  }
+  
+  .heading__credits .heading__link {
+    color: inherit;
+  }
+  
+  /* CARDS */
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    margin: 20px;
+    padding: 20px;
+    width: 500px;
+    min-height: 200px;
+    display: grid;
+    grid-template-rows: 20px 50px 1fr 50px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+  }
+  
+  .card:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+  }
+  
+  .card__link,
+  .card__exit,
+  .card__icon {
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .card__link::after {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all 0.5s;
+  }
+  
+  .card__link:hover::after {
+    width: 100%;
+  }
+  
+  .card__exit {
+    grid-row: 1/2;
+    justify-self: end;
+  }
+  
+  .card__icon {
+    grid-row: 2/3;
+    font-size: 30px;
+  }
+  
+  .card__title {
+    grid-row: 3/4;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  
+  .card__apply {
+    grid-row: 4/5;
+    align-self: center;
+  }
+  
+  /* CARD BACKGROUNDS */
+  
+  .card-1 {
+    background: linear-gradient(to right, #FAB27B, #4169E1);
+  }
+  
+  .card-2 {
+    background: linear-gradient(to right,#FAB27B, #4169E1);
+  }
+  
+  .card-3 {
+    background: linear-gradient(to right,#FAB27B, #4169E1);
+  }
+   
+  .card-4 {
+    background: linear-gradient(to right,#FAB27B, #4169E1);
+  }
+  
+  .card-5 {
+    background: linear-gradient(to right,#FAB27B, #4169E1);
+  }
+  
+  /* RESPONSIVE */
+  
+  @media (max-width: 1600px) {
+    .cards {
+      justify-content: center;
+    }
+  }
+  
+
+
+  .sticky-image{
+   
+    position:absolute;
+    margin-left: -10px; /* very important for the image to be centered */
+    left:10%;
+    bottom:10px;
+}
+
+.sticky-image img{
+  position: absolute;
+  left: 1;
+  bottom: 100;
+  display: flex;
+  align-items: flex-end;
+}
+
+
+
+
+.sossy h1{
+  position: absolute;
+width: 308px;
+height: 68px;
+left: 422px;
+top: 126px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 45px;
+line-height: 67px;
+/* identical to box height */
+
+
+color: #2D4EB1;
+
+}
+
+.sossy2 p{
+  /* Stay Tuned ! */
+
+
+position: absolute;
+width: 125px;
+height: 30px;
+left: 605px;
+top: 194px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+
+color: #B5B5B5;
+
+}
+
+.sossy-image img{
+  position: absolute;
+width: 771px;
+height: 749px;
+left: 250px;
+}
+
+
+
+
